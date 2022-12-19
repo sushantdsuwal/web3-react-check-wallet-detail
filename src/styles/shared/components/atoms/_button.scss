@@ -1,0 +1,67 @@
+.btn {
+  @extend .h3;
+
+  &-primary {
+    background: color(app, base) !important;
+    border-color: color(app, base) !important;
+    color: white;
+
+    &:hover {
+      @extend .btn-primary;
+    }
+    &:active {
+      background-color: darken(color(app, base), 8%) !important;
+      border-color: darken(color(app, base), 8%) !important;
+    }
+    &:focus {
+      background-color: darken(color(app, base), 8%) !important;
+      border-color: darken(color(app, base), 8%) !important;
+      box-shadow: 0 0 0 0.2rem rgba(color(app, base), 0.5) !important;
+    }
+    &:disabled {
+      background: color(app, lighter);
+      border-color: color(app, lighter);
+      cursor: not-allowed;
+    }
+  }
+
+  &-secondary {
+    background: color(grayscale, 3);
+    color: color(grayscale, 10);
+  }
+
+  &-light {
+    background: color(grayscale, 4);
+    color: color(grayscale, 10);
+    border: none;
+    &:hover {
+      background: color(grayscale, 4);
+    }
+    &:active {
+      background: color(grayscale, 8) !important;
+      color: white !important;
+    }
+    &:focus {
+      background: color(grayscale, 8);
+      color: white;
+      box-shadow: 0 0 0 0.2rem rgba(#363636, 0.5);
+    }
+    &:disabled {
+      color: color(grayscale, 7);
+      cursor: not-allowed;
+    }
+  }
+
+  &-grey {
+    background-color: color(grayscale, 3);
+    color: color(grayscale, 10);
+    font-size: rem(18px);
+    font-weight: 600;
+  }
+}
+
+.btn-no-focus:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}

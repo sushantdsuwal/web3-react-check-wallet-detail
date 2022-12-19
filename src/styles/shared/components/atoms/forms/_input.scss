@@ -1,0 +1,41 @@
+.form {
+  &-group {
+    margin-bottom: 1.5rem;
+    span.error {
+      color: color(orange_red);
+    }
+    .disable-pointer {
+      pointer-events: none;
+    }
+  }
+
+  &-label {
+    @extend .body-1;
+    color: color(grayscale, 10);
+    margin-bottom: 0.25rem;
+    a {
+      @extend .h6;
+      color: color(grayscale, 10);
+    }
+  }
+
+  &-control {
+    height: rem(40px);
+    border-color: color(grayscale, 6);
+    color: color(grayscale, 10);
+
+    &::placeholder {
+      color: color(grayscale, 6);
+    }
+
+    &:focus {
+      border: 2px solid color(blue);
+      box-shadow: none;
+    }
+
+    &:disabled {
+      background: color(grayscale, 3);
+      color: #737373;
+    }
+  }
+}

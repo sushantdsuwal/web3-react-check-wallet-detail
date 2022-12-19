@@ -1,0 +1,78 @@
+body {
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//
+.error {
+  color: color(orange_red);
+}
+
+h1,
+.h1 {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  color: color(grayscale, 10);
+}
+
+h2,
+.h2 {
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+}
+
+h3,
+.h3 {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  color: color(grayscale, 10);
+}
+
+h4,
+.h4 {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  color: color(grayscale, 10);
+}
+
+h5,
+.h5 {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+}
+
+h6,
+.h6 {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+
+body {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+
+.body-1 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.4px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
